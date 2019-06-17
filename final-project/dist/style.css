@@ -1,0 +1,510 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap");
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: grid;
+}
+
+body {
+  position: relative;
+  background-color: #e5e1de;
+  box-sizing: border-box;
+  border-top: solid 30px #5f6268;
+  border-bottom: solid 30px #5f6268;
+  overflow: hidden;
+}
+
+.Top {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  background-color: #d6b0a9;
+  border-radius: 30px 30px 225px 30px;
+  margin-top: -100px;
+  margin-left: -75px;
+  font-family: 'Patrick Hand', cursive;
+}
+.Top h3 {
+  margin-left: 100px;
+  margin-top: 100px;
+  font-size: 52px;
+  width: 100px;
+  line-height: 70px;
+  color: #ffffff;
+}
+.Top h3 span {
+  background-color: #f2e8c9;
+  font-size: 40px;
+  color: #000000;
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+  left: 100%;
+}
+
+.namecard {
+  position: fixed;
+  width: 300px;
+  height: 150px;
+  left: 70%;
+  top: 65%;
+  padding: 20px 5px 5px 10px;
+  overflow: hidden;
+  background-color: #a1b5cc;
+  color: #fffdf4;
+  border: solid 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 15px 20px 15px -15px rgba(0, 0, 0, 0.25);
+  border-radius: 150px;
+  font-family: 微軟正黑體;
+  transition: 0.5s;
+}
+.namecard hr {
+  border-color: #fff;
+  margin-top: -35px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+.namecard h2 {
+  font-size: 25px;
+  margin-left: 50px;
+}
+.namecard span {
+  font-size: 25px;
+  margin-left: 15px;
+}
+.namecard h5 {
+  font-size: 10px;
+  font-weight: 100;
+  margin-right: 20px;
+}
+.namecard p {
+  font-size: 20px;
+  margin-left: 85px;
+}
+
+.namecard:hover {
+  -webkit-transform: translate(-25px, -25px);
+          transform: translate(-25px, -25px);
+  box-shadow: -20px -25px 15px -15px rgba(0, 0, 0, 0.25);
+}
+
+.allbub {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+  z-index: -2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #e5e1de;
+}
+@-webkit-keyframes falling {
+  0%,100% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1.5;
+  }
+  0% {
+    -webkit-transform: translate(100%, 0px);
+            transform: translate(100%, 0px);
+  }
+  100% {
+    -webkit-transform: translate(0px, 100%);
+            transform: translate(0px, 100%);
+  }
+}
+@keyframes falling {
+  0%,100% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1.5;
+  }
+  0% {
+    -webkit-transform: translate(100%, 0px);
+            transform: translate(100%, 0px);
+  }
+  100% {
+    -webkit-transform: translate(0px, 100%);
+            transform: translate(0px, 100%);
+  }
+}
+.allbub [class*='bub'] {
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  -webkit-animation: falling 2s infinite;
+          animation: falling 2s infinite;
+}
+.allbub .bub1 {
+  position: absolute;
+  left: 7.206489842%;
+  top: 22.026932757%;
+  -webkit-animation-delay: -0.1s;
+          animation-delay: -0.1s;
+}
+.allbub .bub2 {
+  position: absolute;
+  left: 13.2965336093%;
+  top: 20.5021427312%;
+  -webkit-animation-delay: -0.2s;
+          animation-delay: -0.2s;
+}
+.allbub .bub3 {
+  position: absolute;
+  left: 46.8335996773%;
+  top: 86.0812112204%;
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+}
+.allbub .bub4 {
+  position: absolute;
+  left: 72.5267543959%;
+  top: 35.0229032871%;
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s;
+}
+.allbub .bub5 {
+  position: absolute;
+  left: 16.8457162137%;
+  top: 59.3707996136%;
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+.allbub .bub6 {
+  position: absolute;
+  left: 86.3718248962%;
+  top: 15.9091472309%;
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
+}
+.allbub .bub7 {
+  position: absolute;
+  left: 44.3174238834%;
+  top: 85.3738509193%;
+  -webkit-animation-delay: -0.7s;
+          animation-delay: -0.7s;
+}
+.allbub .bub8 {
+  position: absolute;
+  left: 98.2806943219%;
+  top: 34.4649484442%;
+  -webkit-animation-delay: -0.8s;
+          animation-delay: -0.8s;
+}
+.allbub .bub9 {
+  position: absolute;
+  left: 89.2331260151%;
+  top: 79.4746847574%;
+  -webkit-animation-delay: -0.9s;
+          animation-delay: -0.9s;
+}
+.allbub .bub10 {
+  position: absolute;
+  left: 9.3805686738%;
+  top: 77.8262240066%;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+}
+.allbub .bub11 {
+  position: absolute;
+  left: 28.0754726843%;
+  top: 10.2147945564%;
+  -webkit-animation-delay: -1.1s;
+          animation-delay: -1.1s;
+}
+.allbub .bub12 {
+  position: absolute;
+  left: 96.4638419527%;
+  top: 13.5370534353%;
+  -webkit-animation-delay: -1.2s;
+          animation-delay: -1.2s;
+}
+.allbub .bub13 {
+  position: absolute;
+  left: 48.5467532209%;
+  top: 54.9917065327%;
+  -webkit-animation-delay: -1.3s;
+          animation-delay: -1.3s;
+}
+.allbub .bub14 {
+  position: absolute;
+  left: 41.9207939609%;
+  top: 80.0155248284%;
+  -webkit-animation-delay: -1.4s;
+          animation-delay: -1.4s;
+}
+.allbub .bub15 {
+  position: absolute;
+  left: 34.1684416841%;
+  top: 13.3788958375%;
+  -webkit-animation-delay: -1.5s;
+          animation-delay: -1.5s;
+}
+.allbub .bub16 {
+  position: absolute;
+  left: 53.8284937915%;
+  top: 48.0478165965%;
+  -webkit-animation-delay: -1.6s;
+          animation-delay: -1.6s;
+}
+.allbub .bub17 {
+  position: absolute;
+  left: 51.4862416961%;
+  top: 5.1548152237%;
+  -webkit-animation-delay: -1.7s;
+          animation-delay: -1.7s;
+}
+.allbub .bub18 {
+  position: absolute;
+  left: 74.1073200091%;
+  top: 9.8566742261%;
+  -webkit-animation-delay: -1.8s;
+          animation-delay: -1.8s;
+}
+.allbub .bub19 {
+  position: absolute;
+  left: 14.1601251074%;
+  top: 34.1408148473%;
+  -webkit-animation-delay: -1.9s;
+          animation-delay: -1.9s;
+}
+.allbub .bub20 {
+  position: absolute;
+  left: 56.4229982837%;
+  top: 32.1800122226%;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+}
+
+@-webkit-keyframes back {
+  0% {
+    background-color: #f2eeea;
+  }
+  25% {
+    background-color: #c3b1d6;
+  }
+  50% {
+    background-color: #547b91;
+  }
+  75% {
+    background-color: #bedba2;
+  }
+  100% {
+    background-color: #f8f998;
+  }
+}
+
+@keyframes back {
+  0% {
+    background-color: #f2eeea;
+  }
+  25% {
+    background-color: #c3b1d6;
+  }
+  50% {
+    background-color: #547b91;
+  }
+  75% {
+    background-color: #bedba2;
+  }
+  100% {
+    background-color: #f8f998;
+  }
+}
+.allbub {
+  -webkit-animation: back 8s infinite;
+          animation: back 8s infinite;
+}
+
+@-webkit-keyframes title {
+  0% {
+    margin-top: -200px;
+    margin-left: -300px;
+  }
+  50% {
+    margin-top: -75px;
+    margin-left: -50px;
+  }
+  100% {
+    margin-top: -100px;
+    margin-left: -75px;
+  }
+}
+
+@keyframes title {
+  0% {
+    margin-top: -200px;
+    margin-left: -300px;
+  }
+  50% {
+    margin-top: -75px;
+    margin-left: -50px;
+  }
+  100% {
+    margin-top: -100px;
+    margin-left: -75px;
+  }
+}
+.Top {
+  -webkit-animation-name: title;
+          animation-name: title;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+.BOX {
+  position: absolute;
+  top: 200px;
+  left: 300px;
+  width: 150px;
+  height: 200px;
+  padding: 50px 15px 30px 20px;
+  overflow: hidden;
+  background-color: #dba2d2;
+  border: solid 1px rgba(0, 0, 0, 0.05);
+  border-radius: 150px;
+  font-family: 微軟正黑體;
+}
+
+.icon {
+  position: absolute;
+  background: black;
+  place-items: center;
+  left: 300px;
+  top: 200px;
+  width: 70px;
+  height: 70px;
+  transition: 0.75s;
+  -webkit-mask: url(https://image.flaticon.com/icons/svg/1126/1126453.svg);
+          mask: url(https://image.flaticon.com/icons/svg/1126/1126453.svg);
+  -webkit-mask-size: cover;
+          mask-size: cover;
+  z-index: 2;
+}
+
+.icon:hover {
+  background: #51b5b1;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.funny {
+  position: absolute;
+  background: black;
+  place-items: center;
+  left: 450px;
+  top: 200px;
+  width: 70px;
+  height: 70px;
+  transition: 0.75s;
+  -webkit-mask: url(https://image.flaticon.com/icons/svg/193/193621.svg);
+          mask: url(https://image.flaticon.com/icons/svg/193/193621.svg);
+  -webkit-mask-size: cover;
+          mask-size: cover;
+  z-index: 2;
+}
+
+.funny:hover {
+  background: #efa243;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.popular {
+  position: absolute;
+  background: black;
+  place-items: center;
+  left: 600px;
+  top: 200px;
+  width: 70px;
+  height: 70px;
+  transition: 0.75s;
+  -webkit-mask: url(https://image.flaticon.com/icons/svg/1685/1685316.svg);
+          mask: url(https://image.flaticon.com/icons/svg/1685/1685316.svg);
+  -webkit-mask-size: cover;
+          mask-size: cover;
+  z-index: 2;
+}
+
+.popular:hover {
+  background: #dd394f;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.pic {
+  position: absolute;
+  width: 455px;
+  height: 450px;
+  left: 260px;
+  top: 350px;
+  background-image: url(https://www.hahatai.com/sites/default/files/u1031/d2766675.jpg);
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+}
+
+.box {
+  position: relative;
+  top: -200px;
+  left: 100px;
+  width: 50px;
+  height: 50px;
+  background: #a998d3;
+  -webkit-animation-name: boxmove;
+          animation-name: boxmove;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  pointer-events: none;
+}
+
+@-webkit-keyframes boxmove {
+  0% {
+    left: 150px;
+    background: #ed8787;
+  }
+  25% {
+    background: #96b7d1;
+  }
+  50% {
+    background: #96d199;
+    -webkit-transform: scale(3.25) rotate(-350deg);
+            transform: scale(3.25) rotate(-350deg);
+  }
+  100% {
+    left: 750px;
+    background: #ed8787;
+  }
+}
+
+@keyframes boxmove {
+  0% {
+    left: 150px;
+    background: #ed8787;
+  }
+  25% {
+    background: #96b7d1;
+  }
+  50% {
+    background: #96d199;
+    -webkit-transform: scale(3.25) rotate(-350deg);
+            transform: scale(3.25) rotate(-350deg);
+  }
+  100% {
+    left: 750px;
+    background: #ed8787;
+  }
+}
